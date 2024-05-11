@@ -1,73 +1,74 @@
 import React from "react";
-import image from "../components/Images/g.png";
+import logo from "../components/Images/g.png";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
     <>
-      <footer className="bg-secondary h-auto py-2">
+      <footer className="footter h-auto py-2">
         <div className="footer  d-flex justify-content-around ">
           <nav style={{ width: "28rem" }}>
-            <img
-              src={image}
-              alt="logo"
-              style={{ width: "5rem", height: "5rem"}}
-            />
+          <Link to="/"> <img src={logo}  class="   p-0  w-20 logo rounded-full" />
+</Link>
             <p>
               Explore the Best of Nepal's Cuisine and experience the richness of
               Nepali Tastes,Anytime,Anywhere
             </p>
           </nav>
-          <nav>
-            <h3 className="footer-title text-warning">Services</h3>
+          <nav className="footter">
+            <h3 className="footer-title ">Services</h3>
             <div className="d-flex flex-column ">
-              <a href="/" className="text-decoration-none text-white">
+              <a href="/" className="text-decoration-none footter">
                 Branding
               </a>
-              <a href="/" className="text-decoration-none text-white">
+              <a href="/" className="text-decoration-none footter">
                 Design
               </a>
-              <a href="/" className="text-decoration-none text-white">
+              <a href="/" className="text-decoration-none footter ">
                 Marketing
               </a>
-              <a href="/" className="text-decoration-none text-white">
+              <a href="/" className="text-decoration-none footter ">
                 Advertisement
               </a>
             </div>
           </nav>
-          <nav>
-            <h3 className="footer-title text-warning">Company</h3>
+          <nav className="footter">
+            <h3 className="footer-title ">Company</h3>
             <div className="d-flex flex-column ">
-              <a href="/" className="text-decoration-none text-white">
+              <a href="/" className="text-decoration-none footter">
                 About us
               </a>
-              <a href="/" className="text-decoration-none text-white">
+              <a href="/" className="text-decoration-none  footter">
                 Contact
               </a>
-              <a href="/" className="text-decoration-none text-white">
+              <a href="/" className="text-decoration-none footter ">
                 Jobs
               </a>
-              <a href="/" className="text-decoration-none text-white">
+              <a href="/" className="text-decoration-none footter ">
                 Press Kit
               </a>
             </div>
           </nav>
-          <nav>
-            <h3 className="footer-title text-warning">Legal</h3>
+          <nav className="footter">
+            <h3 className="footer-title ">Legal</h3>
             <div className="d-flex flex-column">
-              <a href="/" className="text-decoration-none text-white">
+              <a href="/" className="text-decoration-none footter ">
                 Terms of use
               </a>
-              <a href="/" className="text-decoration-none text-white">
+              <a href="/" className="text-decoration-none footter ">
                 Privacy policy
               </a>
-              <a href="/" className="text-decoration-none text-white">
+              <a href="/" className="text-decoration-none footter ">
                 Cookie policy
               </a>
             </div>
           </nav>
         </div>
+        <div>
         <hr />
-        <p className="text-center">© 2024 <i>The Boolean</i>, Inc</p>
+        <p className="text-center">© 2024 <i>The Booleans</i>, Inc</p>
+        </div>
+       
       </footer>
     </>
   );

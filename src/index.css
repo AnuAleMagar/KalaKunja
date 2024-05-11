@@ -33,3 +33,58 @@ body{
 .sidebarHeight{
     height: 35rem;
 }
+.containerUserLogin{
+  margin-top: 100rem;
+  padding-top: 215rem;
+}
+.containerUserLogin{
+  padding-top: 100rem;
+  margin-top: 5rem;
+}
+.userLoginSubmitButton {
+  background-color: #2B4896; /* Set to match the navbar color */
+  border-color: #2B4896; /* matching border color */
+  color: #fff; /* text color */
+}
+
+.userLoginSubmitButton:hover {
+  background-color: #1F357D; /* Darken the color slightly on hover */
+  border-color: #1F357D; /* matching border color */
+}
+
+.userLoginSubmitButton:focus {
+  background-color: #162C68; /* Darken the color further when focused */
+  border-color: #162C68; /* slightly darker border color */
+  box-shadow: 0 0 0 0.1rem rgba(6, 23, 209, 0.688);
+}
+.newUserButton {
+  background-color: #fff; /* Set background to white */
+  border-color: #2B4896; /* Matching border color */
+  color: #2B4896; /* Text color matching navbar color */
+}
+
+.newUserButton:hover {
+  background-color: #f5f5f5; /* Lighten the background slightly on hover */
+}
+
+.newUserButton:focus {
+  background-color: #fff; /* Keep the background white when focused */
+  border-color: #162C68; /* Darken the border color slightly */
+  color: #162C68; /* Darken the text color slightly */
+  box-shadow: 0 0 0 0.1rem rgba(6, 23, 209, 0.688);
+}
+
+
+.containerUserSignup{
+  margin-top: 100rem;
+  padding-top: 215rem;
+}
+.containerUserSignup{
+  padding-top: 100rem;
+  margin-top: 5rem;
+}
+.footter{
+  color: #2B4896 ;
+  background-color: #F6F6F6;
+}
+

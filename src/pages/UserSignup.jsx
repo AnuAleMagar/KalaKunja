@@ -3,7 +3,7 @@ import { useNavigate, Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
-export default function Signup() {
+export default function UserSignup() {
   const [credentials, setCredentials] = useState({
     name: "",
     email: "",
@@ -65,27 +65,16 @@ export default function Signup() {
 
   return (
     <>
-      <div
-        style={{
-          backgroundImage:
-            'url("https://images.pexels.com/photos/1565982/pexels-photo-1565982.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")',
-          backgroundSize: "cover",
-          height: "100vh",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
+      <div >
         <div className="mb-5">
           <Navbar />
         </div>
         <div
-          className="container mt-5 pt-6"
-          style={{ width: "50%", maxWidth: "600px" }}
+          className="containerUserSignup container  pb-5 w-1/4   pt-5"
+          style={{ maxWidth: "600px" }}
         >
           <form
-            className="w-100 m-auto mt-2 pt-4 pb-5 border bg-dark border-warning rounded"
+            className="w-100 m-auto pb-1 border shadow  rounded"
             onSubmit={handleSubmit}
           >
             <div className="m-3">
@@ -156,13 +145,13 @@ export default function Signup() {
             <div className="m-3">
               <button
                 type="submit"
-                className="mm-3 btn btn-warning text-white me-2"
+                className="userLoginSubmitButton m-3 btn  me-2"
               >
                 Submit
               </button>
               <Link
                 to="/userLogin"
-                className="m-3 mx-1 btn btn-white bg-white text-warning"
+                className="newUserButton m-3 mx-1 btn btn-white bg-white "
               >
                 Already a user
               </Link>

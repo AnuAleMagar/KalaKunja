@@ -10,13 +10,13 @@ export default function UserLogin() {
   const dispatch = useDispatchCart();
   const cartItems = useCart();
 
-  useEffect(() => {
-    // Check if user is already logged in, if so, redirect to home page
-    const token = localStorage.getItem('token');
-    if (token) {
-      navigate('/');
-    }
-  }, []);
+//   useEffect(() => {
+//     // Check if user is already logged in, if so, redirect to home page
+//     const token = localStorage.getItem('token');
+//     if (token) {
+//       navigate('/');
+//     }
+//   }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -55,12 +55,13 @@ export default function UserLogin() {
 
   return (<>
 
-    <div style={{ backgroundImage: 'url("https://images.pexels.com/photos/326278/pexels-photo-326278.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")', height: '100vh', backgroundSize: 'cover', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+    {/* <div style={{ backgroundImage: 'url("https://images.pexels.com/photos/326278/pexels-photo-326278.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")', height: '100vh', backgroundSize: 'cover', display: 'flex', justifyContent: 'center', alignItems: 'center' }}> */}
+    <div>
       <div className='mb-5'>
         <Navbar />
       </div>
-      <div className='container mt-5 pt-6'>
-        <form className='w-50 m-auto mt-2 pt-4  pb-5 border bg-dark border-warning rounded' onSubmit={handleSubmit}>
+      <div class='containerUserLogin pb-5   pt-5'>
+        <form class='w-1/4 m-auto  pt-1  pb-1 border  shadow  rounded' onSubmit={handleSubmit}>
         
           <div className="m-3">
           <h2 className='mb-4 '>Login</h2>
@@ -72,8 +73,8 @@ export default function UserLogin() {
             <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
             <input type="password" className="form-control" value={credentials.password} onChange={onChange} name='password' />
           </div>
-          <button type="submit" className=" mx-3 m-3 btn btn-warning text-white">Submit</button>
-          <Link to="/userSignup" className="m-3 mx-1 btn btn-white bg-white text-warning">New User</Link>
+          <button type="submit" className=" userLoginSubmitButton mx-3 m-3 btn btn-primary text-white ">Submit</button>
+          <Link to="/userSignup" className="newUserButton m-3 mx-1 btn btn-white bg-white ">New User</Link>
         </form>
       </div>
     

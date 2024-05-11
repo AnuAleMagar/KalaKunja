@@ -23,7 +23,7 @@ export default function Navbar() {
       <ul tabIndex={0} className="mt-4 z-[1] p-2 shadow menu menu-sm dropdown-content  rounded-box w-52">
      
       <Link  to="/userLogin">    <li className='loginList'>Login as User</li></Link>
-      <Link Link to="/sellerLogin">    <li className='loginList'>Login as Seller</li> </Link>
+      <Link to="/sellerLogin"> <li className='loginList'>Login as Seller</li> </Link>
      
     
       </ul>
