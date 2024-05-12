@@ -22,7 +22,7 @@ export default function SellerPage() {
                     mt-10">
                         {/* <SellerDashboard /> */}
 
-                        <Sell/>
+                        <Sell />
                     </div>
 
 

@@ -47,11 +47,9 @@ export default function UserLogin() {
     setCredentials({ ...credentials, [e.target.name]: e.target.value });
   };
 
-  //   const totalPrice = cartItems.reduce((total, item) => total + item.price, 0);
 
   return (
     <>
-      {/* <div style={{ backgroundImage: 'url("https://images.pexels.com/photos/326278/pexels-photo-326278.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")', height: '100vh', backgroundSize: 'cover', display: 'flex', justifyContent: 'center', alignItems: 'center' }}> */}
       <div>
         <div className="mb-5">
           <Navbar />

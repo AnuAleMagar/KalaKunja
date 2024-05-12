@@ -47,7 +47,7 @@ export default function Body() {
                   if (categoryItems.length === 0) return null; // Skip rendering if no items in the category
                   return (
                     <div key={category}>
-                      <div className="fs-3 m-3 text-black">{category}</div>
+                      <div className="fs-3 m-3 text-black"><h5>{category}</h5></div>
                       <hr id="hr-success" style={{ height: "4px", backgroundImage: "-webkit-linear-gradient(left,rgb(0, 255, 255),rgb(0, 0, 0))" }} />
                       <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                         {categoryItems.map((filteredItem) => (

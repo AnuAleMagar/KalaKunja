@@ -38,7 +38,7 @@ export default function SellerLogin() {
       localStorage.setItem("userEmail", credentials.email);
       localStorage.setItem("token", json.token); // Check if json.authToken contains the token
       // Redirect user to homepage or perform any other necessary actions
-      navigate("/");
+      navigate("/sellerPage");
     } else {
       alert("Enter Valid Credentials");
     }
@@ -90,12 +90,13 @@ export default function SellerLogin() {
                 name="password"
               />
             </div>
-            <button
+            <Link to="/sellerPage">   <button
               type="submit"
               className=" userLoginSubmitButton mx-3 m-3 btn btn-primary text-white "
             >
               Submit
-            </button>
+            </button></Link>
+         
             <Link
               to="/sellerSignup"
               className="newUserButton m-3 mx-1 btn btn-white bg-white ">

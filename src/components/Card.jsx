@@ -19,7 +19,7 @@ export default function Card({
     {/* <p className="m-0 pb-0 bg-red-200">If a dog chews shoes whodoes he choose?</p> */}
     <div className="card-actions m-0 p-0 flex ">
       <div className="  mt-0 pt-0"><h6>{price}</h6></div> 
-       <div> <button>Buy Now</button> </div>
+       <div> <button class="hover:bg-blue-500 rounded-lg">Buy Now</button> </div>
         
           </div>
           

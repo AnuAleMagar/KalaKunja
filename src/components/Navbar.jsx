@@ -52,7 +52,7 @@ export default function Navbar() {
         <a href="to" className="btn btn-ghost text-xl"></a>
       </div>
       <div className="col-lg-10 row gap-2 ">
-        <div className="form-control rounded-md row col-lg-6  h-11 flex items-center">
+        <div className="form-control rounded-md row col-lg-8  h-10 flex items-center">
           <div class="col-lg-8 ">
             <input
               type="text"

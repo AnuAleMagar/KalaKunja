@@ -34,7 +34,7 @@ export default function Footer() {
           <nav className="footter">
             <h3 className="footer-title ">Company</h3>
             <div className="d-flex flex-column ">
-              <a href="/" className="text-decoration-none footter">
+              <a href="/aboutus" className="text-decoration-none footter">
                 About us
               </a>
               <a href="/" className="text-decoration-none  footter">

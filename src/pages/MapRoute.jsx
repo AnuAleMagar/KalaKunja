@@ -4,7 +4,7 @@ import L from "leaflet";
 import "leaflet-routing-machine";
 import "leaflet-control-geocoder";
 import Navbar from "../components/Navbar";
-import Footer from "../components/Footer"
+import Footer from "../components/Footer";
 
 const MapRoute = () => {
   const [map, setMap] = useState(null);
@@ -13,13 +13,10 @@ const MapRoute = () => {
     const leafletMap = L.map("map").setView([28.3949, 84.124], 8);
     setMap(leafletMap);
 
-    L.tileLayer(
-      "http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}",
-      {
-        maxZoom: 20,
-        subdomains: ["mt0", "mt1", "mt2", "mt3"],
-      }
-    ).addTo(leafletMap);
+    L.tileLayer("http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}", {
+      maxZoom: 20,
+      subdomains: ["mt0", "mt1", "mt2", "mt3"],
+    }).addTo(leafletMap);
 
     return () => {
       leafletMap.remove();
@@ -40,8 +37,8 @@ const MapRoute = () => {
   const handleGetDirections = () => {
     getCurrentLocation((currentLocation) => {
       const destination = {
-        lat: 27.8253, // Example latitude of the destination
-        lng: 83.6348, // Example longitude of the destination
+        lat: 27.67734, // Example latitude of the destination
+        lng: 85.36909, // Example longitude of the destination,
       };
       getDirections(currentLocation, destination);
     });
@@ -68,18 +65,18 @@ const MapRoute = () => {
 
   return (
     <div>
-          
-      <div class="row container p-5 bg-red-500 m-auto">
-        <div class="col-lg-2">
-           <h1>Description</h1>
+      <Navbar />
+      <div class="row container  bg-gray-100 shadow  m-auto flex" >
+        <div class="col-lg-2 text-primary textile   pt-5">
+          <h1>Sharma Textile</h1>
+          <p>Sharma Textiles is more than just a small textile shop nestled in the heart of Kaushaltar, Bhaktapur—it's a cherished gem within the local community. Established with a vision to provide quality fabrics and personalized service, Sharma Textiles has become a trusted destination for locals seeking everything from vibrant saris to intricately woven textiles</p>
         </div>
-        <div>
-        <div id="map" class="col-lg-10"  style={{ height: "600px" }} />
-      <button onClick={handleGetDirections}>Get Directions</button>
+        <div class="ms-6 mb-5"> 
+          <div id="map" class="col-lg-10 bg-gray-500" style={{ height: "550px",width:"988px" }} />
+          <button onClick={handleGetDirections}>Get Directions</button>
         </div>
-
       </div>
-      
+
       <Footer />
     </div>
   );

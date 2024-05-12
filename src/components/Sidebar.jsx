@@ -16,7 +16,7 @@ export default function Sidebar() {
       <ul className="menu m-0 p-0  w-70 bg-base-200 text-base-content ">
         {/* Sidebar content here */}
     
-        <li><a className='m-0 p-0 pb-2 pt-3 '>Handicrafts</a></li>
+        <li><a a className='m-0 p-0 pb-2 pt-3 '>Handicrafts</a></li>
         <li><a a className='m-0  pb-2 p-0'>Accessories</a></li>
         <li><a a className='m-0  pb-2 p-0'>Textiles</a></li>
 
@@ -29,6 +29,7 @@ export default function Sidebar() {
          <li><a a className='m-0  pb-2 p-0'>Musical instrument</a></li>
          <li><a a className='m-0  pb-2 p-0'>Handmade Home Decor</a></li>
          <li><a a className='m-0  pb-2 p-0'>Culture Dresses</a></li>
+         <Link to ='/localbusiness'><li><a a className='m-0  pb-2 p-0'>Local Businesses Near Me</a></li></Link>
          <Link to ='/informationCenter'><li><a a className='m-0  pb-2 p-0'>Information Center</a></li></Link>
 
 

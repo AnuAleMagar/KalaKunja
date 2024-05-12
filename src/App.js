@@ -11,6 +11,8 @@ import SellerSignup from "./pages/SellerSignup";
 import TrainingInfo from "./pages/TrainningInfo.jsx";
 import MapRoute from "./pages/MapRoute.jsx";
 import SellerPage from "./pages/SellerPage.jsx";
+import LocalBusiness from "./pages/LocalBusiness.jsx";
+import Aboutus from "./pages/Aboutus.jsx";
 function App() {
   return (
     <div className="App" class="">
@@ -22,6 +24,7 @@ function App() {
             <Route exact path="/userSignup" element={<UserSignup />} />
             <Route exact path="/sellerLogin" element={<SellerLogin />} />
             <Route exact path="/sellerSignup" element={<SellerSignup />} />
+            <Route path="/localbusiness" element={<LocalBusiness />} />
             <Route path="/informationCenter" element={<TrainingInfo />} />
             <Route path="/mapRoute" element={<MapRoute />} />
 
@@ -29,18 +32,12 @@ function App() {
 
             {/* Use AdminRouteGuard to protect the /admin route */}
              
-            <Route
-              path="/sellerPage"
-              element={<AdminRouteGuard element={<SellerPage />} />}
-            />
-            <Route exact path="/sellerLogin" element={<SellerLogin />} />
+           
+            <Route path="/sellerPage" element={<SellerPage />} />
 
-            <Route
-              path="/admin"
-              element={<AdminRouteGuard element={<Admin />} />}
-            />
-            <Route exact path="/adminlogin" element={<AdminLogin />} />
-            {/* <Route exact path="/all" element={<AllOrder />} /> */}
+            <Route  path="/sellerLogin" element={<SellerLogin />} />
+            <Route  path="/aboutus" element={<Aboutus />} />
+
           </Routes>
         </div>
       </Router>

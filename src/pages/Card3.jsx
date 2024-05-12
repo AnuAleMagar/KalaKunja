@@ -1,6 +1,6 @@
 import React from 'react'
 import tra from '../components/Images/namas.jpg'
-
+import { Link } from 'react-router-dom'
 export default function Card3(props) {
     return (
         <div>
@@ -19,7 +19,7 @@ export default function Card3(props) {
                         {/* <button className="btn btn-primary text-xs ">Know More</button> */}
 
                         <div className="card-actions">
-                        <button className="btn btn-primary text-xs ">Know More</button>
+                       <Link to="/mapRoute" > <button className="btn btn-primary text-xs ">Know More</button></Link>
                     </div>
 
 
