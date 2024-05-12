@@ -10,10 +10,9 @@ export default function Footer() {
           <nav style={{ width: "28rem" }}>
           <Link to="/"> <img src={logo}  class="   p-0  w-20 logo rounded-full" />
 </Link>
-            <p>
-              Explore the Best of Nepal's Cuisine and experience the richness of
-              Nepali Tastes,Anytime,Anywhere
-            </p>
+            <strong>
+            Embrace Tradition, Elevate Craft: Explore Kalakunja
+            </strong>
           </nav>
           <nav className="footter">
             <h3 className="footer-title ">Services</h3>

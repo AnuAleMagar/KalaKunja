@@ -10,6 +10,7 @@ import SellerLogin from "./pages/SellerLogin";
 import SellerSignup from "./pages/SellerSignup";
 import TrainingInfo from "./pages/TrainningInfo.jsx";
 import MapRoute from "./pages/MapRoute.jsx";
+import SellerPage from "./pages/SellerPage.jsx";
 function App() {
   return (
     <div className="App" class="">
@@ -24,7 +25,16 @@ function App() {
             <Route path="/informationCenter" element={<TrainingInfo />} />
             <Route path="/mapRoute" element={<MapRoute />} />
 
+    
+
             {/* Use AdminRouteGuard to protect the /admin route */}
+             
+            <Route
+              path="/sellerPage"
+              element={<AdminRouteGuard element={<SellerPage />} />}
+            />
+            <Route exact path="/sellerLogin" element={<SellerLogin />} />
+
             <Route
               path="/admin"
               element={<AdminRouteGuard element={<Admin />} />}
