@@ -49,9 +49,9 @@ export default function Body() {
                     <div key={category}>
                       <div className="fs-3 m-3 text-black">{category}</div>
                       <hr id="hr-success" style={{ height: "4px", backgroundImage: "-webkit-linear-gradient(left,rgb(0, 255, 255),rgb(0, 0, 0))" }} />
-                      <div className="row">
+                      <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                         {categoryItems.map((filteredItem) => (
-                          <div key={filteredItem.id} className="col-12 col-md-6 col-lg-3">
+                          <div key={filteredItem.id} className="col">
                             {console.log(filteredItem.url)}
                             <Card
                               name={filteredItem.name}

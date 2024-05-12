@@ -12,17 +12,17 @@ export default function Card({
   <figure><img class="h-32 mb-0  w-45" src={ImgSrc} alt={name}/></figure>
   <div className="card-body m-0 pt-0  ps-4 pe-3   ">
     <h2 className="card-title mb-0 pb-0 ">
-     {name}
-      <div className="badge badge-secondary">{description}</div>
-    </h2>
-    {/* <h6>Delivey Free</h6> */}
+     {name}  </h2>
+      <div className=" text-secondary"><p>{description}</p></div>
+
      
     {/* <p className="m-0 pb-0 bg-red-200">If a dog chews shoes whodoes he choose?</p> */}
-    <div className="card-actions m-0 p-0  ">
-      <div className="badge badge-outline  mt-0 pt-0"><h4>{price}</h4></div> 
-     
-      
+    <div className="card-actions m-0 p-0 flex ">
+      <div className="  mt-0 pt-0"><h6>{price}</h6></div> 
+       <div> <button>Buy Now</button> </div>
+        
           </div>
+          
           
   </div>
 </div>
