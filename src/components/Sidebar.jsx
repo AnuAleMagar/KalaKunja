@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 export default function Sidebar() {
   return (
     <div className="drawer lg:drawer-open ">
@@ -29,6 +29,7 @@ export default function Sidebar() {
          <li><a a className='m-0  pb-2 p-0'>Musical instrument</a></li>
          <li><a a className='m-0  pb-2 p-0'>Handmade Home Decor</a></li>
          <li><a a className='m-0  pb-2 p-0'>Culture Dresses</a></li>
+         <Link to ='/informationCenter'><li><a a className='m-0  pb-2 p-0'>Information Center</a></li></Link>
 
 
         

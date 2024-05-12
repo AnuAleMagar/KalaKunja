@@ -2,12 +2,13 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 export default function Sin() {
   return (
-    <div>    <div className="dropdown dropdown-end col-lg-1  p-0">
+    <div>    <div className="dropdown dropdown-end col-lg-1 ms-1   p-0">
     <div tabIndex={0} role="button" className=" ">
-      <div className="w-100 ">
+      <div className="w-full ">
         <button
           type="button"
-          class="btn btn-link LoginBtn p-1 text-white text-decoration-none"
+          class="btn btn-link signin Btn p-0 text-white text-decoration-none" 
+          style={{ width: '90px', height: '50px' }}
         >
           <h4>Sign Up</h4>
         </button>

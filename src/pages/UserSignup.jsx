@@ -38,7 +38,7 @@ export default function UserSignup() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch("http://localhost:5000/api/auth/createuser", {
+    const response = await fetch("http://localhost:8000/signup", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -51,9 +51,8 @@ export default function UserSignup() {
       }),
     });
     const json = await response.json();
-    if (json.success) {
-      localStorage.setItem("token", json.authToken);
-      navigate("/login");
+    if (json.message) {
+      navigate("/userLogin");
     } else {
       alert("Enter Valid Credentials");
     }

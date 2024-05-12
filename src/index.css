@@ -17,10 +17,7 @@ body{
    
    
 }
-.App{
 
-    
-}
 .loginList:hover{
     background-color: rgb(230, 230, 230);
 }
@@ -86,5 +83,8 @@ body{
 .footter{
   color: #2B4896 ;
   background-color: #F6F6F6;
+}
+.signinBtn{
+width: fit-content;
 }
 

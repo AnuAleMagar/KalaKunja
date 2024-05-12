@@ -49,7 +49,7 @@ export default function Navbar() {
         <Link to="/">
           <img src={logo} alt="logo" className="p-0 w-20 logo rounded-full" />
         </Link>
-        <a className="btn btn-ghost text-xl"></a>
+        <a href="to" className="btn btn-ghost text-xl"></a>
       </div>
       <div className="col-lg-10 row gap-2 ">
         <div className="form-control rounded-md row col-lg-6  h-11 flex items-center">
@@ -74,12 +74,10 @@ export default function Navbar() {
         </div>
       {token ? <><div> <button onClick={handleLogout} className="btn btn-link text-white text-decoration-none">
           Logout
-        </button> </div></> :<><div>{console.log("false")} <Log />
-            <Sin /></div></>}
-       
-        <button onClick={handleLogout} className="btn btn-link text-white text-decoration-none">
-          Logout
-        </button>
+        </button> </div></> :<><div class="flex col-lg-2 me-3  "  >
+         <Log  class="flex col-lg-5 bg-red-200 " />
+           <Sin class="flex col-lg-7 bg-gray-500 " /></div></>}
+      
         {/* Other dropdowns and buttons */}
           
 
@@ -119,7 +117,9 @@ export default function Navbar() {
           </div>
         </div>
 
-        <div class="col-lg-2 ">{/* <p>Hello</p> */}</div>
+        <div class="col-lg-1 "><div id="google_translate_element">
+          
+          </div></div>
       </div>
     </div>
   );

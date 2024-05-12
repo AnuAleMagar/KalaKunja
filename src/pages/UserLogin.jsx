@@ -18,6 +18,7 @@ export default function UserLogin() {
     }
   }, [navigate]);
 
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     const response = await fetch("http://localhost:8000/login", {
@@ -33,9 +34,9 @@ export default function UserLogin() {
     const json = await response.json();
     console.log(json); // Check the response in the console to ensure it contains the token
 
-    if (json.success) {
+    if (json?.token) {
       localStorage.setItem("userEmail", credentials.email);
-      localStorage.setItem("token", json.authToken); // Check if json.authToken contains the token
+      localStorage.setItem("token", json.token); // Check if json.authToken contains the token
       // Redirect user to homepage or perform any other necessary actions
       navigate("/");
     } else {
@@ -97,8 +98,7 @@ export default function UserLogin() {
             </button>
             <Link
               to="/userSignup"
-              className="newUserButton m-3 mx-1 btn btn-white bg-white "
-            >
+              className="newUserButton m-3 mx-1 btn btn-white bg-white ">
               New User
             </Link>
           </form>
